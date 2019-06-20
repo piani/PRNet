@@ -21,7 +21,7 @@ def main(args):
         from utils.cv_plot import plot_kpt, plot_vertices, plot_pose_box
 
     # ---- init PRN
-    os.environ['CUDA_VISIBLE_DEVICES'] = args.gpu # GPU number, -1 for CPU
+    os.environ['CUDA_VISIBLE_DEVICES'] = '0' # GPU number, -1 for CPU
     prn = PRN(is_dlib = args.isDlib)
 
     # ------------- load data
